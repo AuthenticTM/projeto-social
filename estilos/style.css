@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg');
+}
+
+main {
+    position: relative; /*container de dentro precisa ser relatico para ativar o absuluto de dentro*/
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute; /*Após colocar ele em absoluto, consigo posicionar ele*/
+    top: 50%;
+    left: 50%; /*Essas tags deixam a quina da box no meio, temos que criar um transform para arrumar*/
+    transform: translate(-50%, -50%); /*Menos metade para esquerda, menos metade para cima*/
+    height: 627px;
+    width: 311px;
+    background: url('/imagens/frame-iphone.png') no-repeat;
+}
